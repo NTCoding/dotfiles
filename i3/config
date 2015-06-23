@@ -175,7 +175,7 @@ bindsym $mod+r mode "resize"
 bindsym Print exec xfce4-screenshooter
 for_window[instance="xfce4-screenshooter"] floating enable
 
-bindcode 37+64+53 exec xscreensaver-command -lock
+bindsym $mod+Control+l exec xscreensaver-command -lock
 
 ##### Startup ######
 
