@@ -180,3 +180,4 @@ for_window[instance="xfce4-screenshooter"] floating enable
 exec --no-startup-id tint2 &
 exec --no-startup-id compton -c --config /home/nick/.config/compton/config &
 exec --no-startup-id feh --bg-fill --randomize /home/nick/pictues/f1 
+exec xscreensaver -no-splash
