@@ -182,4 +182,4 @@ bindsym $mod+Control+l exec xscreensaver-command -lock
 exec --no-startup-id tint2 &
 exec --no-startup-id compton -c --config /home/nick/.config/compton/config &
 exec --no-startup-id feh --bg-fill --randomize /home/nick/pictues/f1 
-exec xscreensaver -no-splash
+exec --no-startup-id xscreensaver -no-splash
