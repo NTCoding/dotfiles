@@ -184,3 +184,4 @@ exec --no-startup-id compton -c --config ~/.config/compton/config &
 exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id nm-applet &
 exec --no-startup-id pasystray &
+exec --no-startup-id feh --bg-fill --randomize ~/pictures/desktopbackgrounds
