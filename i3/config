@@ -38,13 +38,13 @@ gaps outer 15
 new_window pixel 2
 new_float pixel 1
 
-client.focused		#333333 #222222 #eeeeee
+client.focused		#green #green $green
 client.focused_inactive #111111 #222222 #999999
 client.unfocused	#222222 #222222 #999999
 client.urgent		#a5a5a5 #a5a5a5 #2e3436
 client.background	#161616
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 for_window [instance="synapse"] border pixel 0
 
 font pango:DejaVu Sans Mono 8
@@ -172,15 +172,17 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym Print exec xfce4-screenshooter
-for_window[instance="xfce4-screenshooter"] floating enable
+bindsym Print exec gscreenshot
+for_window[instance="gscreenshot"] floating enable
 
 bindsym $mod+Control+l exec xscreensaver-command -lock
 
 ##### Startup ######
 
+exec --no-startup-id dropboxd  &
 exec --no-startup-id tint2 &
 exec --no-startup-id compton -c --config /home/nick/.config/compton/config &
-exec --no-startup-id feh --bg-fill --randomize /home/nick/pictues/f1 
-exec --no-startup-id xscreensaver -no-splash
-exec --no-startup-id volwheel
+exec --no-startup-id feh --bg-fill --randomize /home/nick/pictues/f1 &
+exec --no-startup-id xscreensaver -no-splash &
+exec --no-startup-id volwheel &
+exec --no-startup-id nm-applet &

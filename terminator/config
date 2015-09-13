@@ -16,7 +16,7 @@
     cursor_color = "#09ef0b"
     foreground_color = "#ffffff"
     show_titlebar = False
-    font = DejaVu Sans Mono 10
+    font = DejaVu Sans Mono 11
     audible_bell = True
     scrollback_infinite = True
 [layouts]
